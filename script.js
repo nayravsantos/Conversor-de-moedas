@@ -22,3 +22,8 @@ document.getElementById('reset').addEventListener('click', function() {
     document.getElementById('to-currency').selectedIndex = 0;
     document.getElementById('result').innerText = '';
 });
+
+// Código Professor
+document.getElementById('currency-form').addEventListener('submit', function(event){
+    
+});
