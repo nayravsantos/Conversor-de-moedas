@@ -38,4 +38,15 @@ document.getElementById('currency-form').addEventListener('submit', function(eve
         BRL: { USD: 0.18, EUR: 0.16 },
         EUR: { USD: 1.08, BRL: 6.16 }
     };
+
+   // Conversão simples de moedas
+   let valorConvertido;
+   if(daMoeda === paraMoeda){
+       valorConvertido = valor;
+   }else{
+        valorConvertido = valor * exchangeRates[daMoeda][paraMoeda];
+   }
+
+   const conversao = document.getAnimations('result');
+   
 });
